@@ -10,8 +10,9 @@ from io import StringIO
 
 # Get your OpenAI API key from environment variables
 
-api_key = ""  # Used in production - Uncomment this line when you deploy
-# api_key = "lm-studio"
+api_key = st.secrets.api_credentials.api_key
+  # Used in production - Uncomment this line when you deploy
+
 
 client = OpenAI(api_key=api_key)
 
