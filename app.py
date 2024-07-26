@@ -14,7 +14,7 @@ api_key = os.getenv("OPENAI_API_KEY")
   # Used in production - Uncomment this line when you deploy
 
 
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key)
 
 
 
