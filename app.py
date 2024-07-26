@@ -10,7 +10,7 @@ from io import StringIO
 
 # Get your OpenAI API key from environment variables
 
-api_key = st.secrets.api_credentials.api_key
+api_key = os.getenv("OPENAI_API_KEY")
   # Used in production - Uncomment this line when you deploy
 
 
