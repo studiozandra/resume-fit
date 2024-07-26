@@ -77,7 +77,7 @@ def analyze_text(job_description, resume_text):
   """
 
   # Ensure your API_KEY is set as an environment variable
-  if not api_key:
+  if not os.environ.get("OPENAI_API_KEY"):
       st.error("OpenAI API key is not set. Please set it in your environment variables.")
       return
 
