@@ -87,8 +87,8 @@ def analyze_text(job_description, resume_text):
       completion = client.chat.completions.create(
       model="gpt-3.5-turbo",
       messages=[
-          {"role": "system", "content": F"Using only 3 sentences, give SPECIFIC wording suggestions for {resume_text} improvement to match the given {job_description}." },
-          {"role": "user", "content": F"Using only 3 sentences, give SPECIFIC wording suggestions for {resume_text} improvement to match the given {job_description}."}
+          {"role": "system", "content": F"Using only 3 sentences, tell the candidate some SPECIFIC wording suggestions for resume ( {resume_text} ) improvement so that they can better match the given job description ( {job_description} )." },
+          {"role": "user", "content": F"Using only 3 sentences, tell the candidate some SPECIFIC wording suggestions for resume ( {resume_text} ) improvement so that they can better match the given job description ( {job_description} )."}
       ],
       temperature=0.4,            
       )
